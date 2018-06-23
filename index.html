@@ -10,6 +10,9 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <!-- Custom javascript -->
+    <script type="text/javascript" src="filter.js"></script>
     <title>Materialize CSS</title>
     <style>
       .box{
@@ -19,16 +22,49 @@
 </head>
 <body>
     <div class="container">
-      <h4>Buttons</h4>
-      <a href="#" class="btn">Normal Button</a>
-      <a href="#" class="btn-small waves-dark waves-effect">Small Button</a>
-      <a href="#" class="btn-large">Large Button</a>
-      <a href="#" class="btn indigo waves-effect">Indigo Button</a>
-      <a href="#" class="btn disabled">Disabled Button</a>
-      <h4>Floating Buttons</h4>
-      <a href="#" class="btn-floating pink pulse"></a>
-      <h4>Other elements</h4>
-      <div class="btn">Just playing around with div tag</div>
+      <div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        <input placeholder="Search here" id="filter_value" type="text" class="validate">
+        <label for="first_name">Search Text</label>
+        <a class="waves-effect waves-light btn blue accent-3" onClick="filterTable()">Search</a>
+        <a class="waves-effect waves-light btn blue accent-3" onClick="resetTable()">Reset Table</a>
+      </div>
+    </div>
+  </form>
+</div>
+      <table class="striped" id="threshold_table">
+        <thead>
+          <tr>
+              <th>Name</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+              <th>Value</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>60</td>
+            <td>65</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>66</td>
+            <td>76</td>
+          </tr>
+          <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>77</td>
+            <td>84</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
 </body>
