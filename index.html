@@ -13,79 +13,37 @@
     <script type="text/javascript" src="filter.js"></script>
     <title>Materialize CSS</title>
     <style>
-    tbody {
-    display:block;
-    height:150px;
-    overflow:auto;
-    }
-    thead, tbody tr {
-    display:table;
-    width:100%;
-    table-layout:fixed;
-    }
-    thead {
-    width: calc( 100% - 1em )
-    }
-    table {
-    width:100%;
-    overflow-x: scroll;
-    }
-    .table-wrapper {
-      overflow-x: scroll;
-      width: 100%;
-    }
-    #threshold_table {
-      width: 100%;
-      table-layout: fixed;
-    }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s6">
-              <input placeholder="Search here" id="filter_value" type="text" class="validate">
-              <label for="first_name">Search Text</label>
-              <a class="waves-effect waves-light btn blue accent-3" onClick="filterTable()">Search</a>
-              <a class="waves-effect waves-light btn blue accent-3" onClick="resetTable()">Reset Table</a>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="responsive-table table-status-sheet table-wrapper">
-        <table class="striped" id="threshold_table">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Item Name</th>
-              <th>Item Price</th>
-              <th>Value</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Alvin</td>
-              <td>Eclair</td>
-              <td>60</td>
-              <td>65</td>
-            </tr>
-            <tr>
-              <td>Alan</td>
-              <td>Jellybean</td>
-              <td>66</td>
-              <td>76</td>
-            </tr>
-            <tr>
-              <td>Jonathan</td>
-              <td>Lollipop</td>
-              <td>77</td>
-              <td>84</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <h4>Icons</h4>
+      <i class="material-icons red-text">error</i>
+      <i class="material-icons yellow-text text-darken-2">warning</i>
+      <i class="material-icons grey-text">cloud</i>
+      <i class="material-icons blue-text">folder</i>
+      <i class=""></i>
+
+      <h4>Icons on Buttons</h4>
+      <a href="" class="btn indigo">
+        <span>Send</span>
+        <i class="material-icons right">send</i>
+      </a>
+      <a href="" class="btn pink waves-effect waves-light">
+        <span>Email</span>
+        <i class="material-icons left">email</i>
+      </a>
+
+      <h4>Icons on Floating Buttons</h4>
+      <a href="" class="btn-floating blue pulse">
+        <i class="material-icons right">add</i>
+      </a>
+      <a href="" class="btn-floating red pulse">
+        <i class="material-icons left">remove</i>
+      </a>
+      <a href="" class="btn-floating orange pulse">
+        <i class="material-icons left">edit</i>
+      </a>
     </div>
   </body>
 </html>
