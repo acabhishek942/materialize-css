@@ -17,6 +17,11 @@ function filterTable() {
       } else {
         tr[i].style.display = "none";
       }
+
+      if (parseInt(td.innerHTML) < filter)
+        td.classList.add('red-text')
+      if (parseInt(td1.innerHTML) < filter)
+          td1.classList.add('red-text')
     }
   }
 }
@@ -26,5 +31,9 @@ function resetTable() {
   tr = table.getElementsByTagName("tr");
   for (i = 0; i < tr.length; i++) {
     tr[i].style.display = "";
+  }
+  var allRedTexts = document.getElementsByClassName("red-text");
+  for (i = 0; i < allRedTexts.length; i++){
+    allRedTexts[i].classList.remove("red-text");
   }
 }
