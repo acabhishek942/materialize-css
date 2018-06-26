@@ -7,41 +7,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <!-- Custom javascript -->
-    <script type="text/javascript" src="filter.js"></script>
+
     <title>Materialize CSS</title>
     <style>
-      .col > div{
-        background: lightblue;
-        height: 120px;
-      }
     </style>
   </head>
   <body>
-    <div class="container">
-      <h4>Shadows and Depths</h4>
-      <div class="row">
-        <div class="col s2">
-          <div class=""></div>
+    <nav class="nav-wrapper indigo">
+        <div class="container">
+          <a href="#" class="brand-logo">Site Title</a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-links">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="" class="btn white indigo-text">Login</a></li>
+          </ul>
         </div>
-        <div class="col s2">
-          <div class="z-depth-1"></div>
-        </div>
-        <div class="col s2">
-          <div class="z-depth-2"></div>
-        </div>
-        <div class="col s2">
-          <div class="z-depth-3"></div>
-        </div>
-        <div class="col s2">
-          <div class="z-depth-4"></div>
-        </div>
-        <div class="col s2">
-          <div class="z-depth-5"></div>
-        </div>
-      </div>
-    </div>
+      </nav>
+
+  <ul class="sidenav" id="mobile-links">
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact</a></li>
+  </ul>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.sidenav').sidenav();
+        });
+      </script>
   </body>
 </html>
